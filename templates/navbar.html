@@ -19,6 +19,22 @@
       <li class="nav-item{% if active_page == "page3" %} class="active" {% endif %}">
         <a class="nav-link" href="/page3">Botball</a>
       </li>
+	<div class="dropdown">
+    	<button class="dropbtn">Dropdown
+      	<i class="fa fa-caret-down"></i>
+    	</button>
+    <div class="dropdown-content">
+      	<li class="nav-item{% if active_page == "edison" %} class="active" {% endif %}">
+        <a class="nav-link" href="/edison">Botball</a>
+      </li>
+      	<li class="nav-item{% if active_page == "finch" %} class="active" {% endif %}">
+        <a class="nav-link" href="/finch">Botball</a>
+      </li>
+      	<li class="nav-item{% if active_page == "pi" %} class="active" {% endif %}">
+        <a class="nav-link" href="/pi">Botball</a>
+      </li>
+    </div>
+  </div>
       <li class="nav-item{% if active_page == "news" %} class="active" {% endif %}">
         <a class="nav-link" href="/news">News</a>
       </li>
