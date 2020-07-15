@@ -125,6 +125,19 @@ def renderPage2():
 def renderPage3():
 	return render_template('page3.html')
 
+@app.route('/edison')
+def renderEdison():
+	return render_template('edison.html')
+
+@app.route('/finch')
+def renderFinch():
+	return render_template('finch.html')
+
+@app.route('/pi')
+def renderPi():
+	return render_template('pi.html')
+
+
 #the tokengetter is automatically called to check who is logged in.
 @github.tokengetter
 def get_github_oauth_token():
