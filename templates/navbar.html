@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-inverse">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 	<!-- Brand -->
 	<a class="navbar-brand" href="/">Home</a>
 	<!-- Toggler/collapsibe Button -->
@@ -26,17 +26,17 @@
 					Dropdown link
 				</a>
 				
-				<ul class="dropdown-menu">
+				<div class="dropdown-menu">
 					<!-- <li class="nav-item{% if active_page == "edison" %} class="active" {% endif %}"> -->
-					<li><a class="nav-link" href="/edison">Edison</a></li>
+					<li><a class="dropdown-item" href="/edison">Edison</a></li>
 					
 					<!-- <li class="nav-item{% if active_page == "finch" %} class="active" {% endif %}">-->
-					<li><a class="nav-link" href="/finch">Finch</a></li>
+					<li><a class="dropdown-item" href="/finch">Finch</a></li>
 				
 					<!--<li class="nav-item{% if active_page == "pi" %} class="active" {% endif %}">-->
-					<li><a class="nav-link" href="/pi">Pi</a></li>
+					<li><a class="dropdown-item" href="/pi">Pi</a></li>
 					
-				</ul>
+				</div>
 			</li> 
 			
 			<li class="nav-item{% if active_page == "news" %} class="active" {% endif %}">
