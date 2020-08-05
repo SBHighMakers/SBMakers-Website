@@ -1,62 +1,59 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
+	<!-- Brand -->
 	<a class="navbar-brand" href="/">Home</a>
-
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+		<ul class="navbar-nav">
 		
-      <li class="nav-item {% if active_page == "page1" %} class="active" {% endif %}">
-        <a class="nav-link" href="/page1">About</a>
-      </li>
-		
-      <li class="nav-item {% if active_page == "page2" %} class="active" {% endif %}">
-        <a class="nav-link" href="/page2">Maker's</a>
-      </li>
-		
-      <li class="nav-item{% if active_page == "page3" %} class="active" {% endif %}">
-        <a class="nav-link" href="/page3">Botball</a>
-      </li>
+			<li class="nav-item {% if active_page == "page1" %} class="active" {% endif %}">
+				<a class="nav-link" href="/page1">About</a>
+			</li>
+			
+			<li class="nav-item {% if active_page == "page2" %} class="active" {% endif %}">
+				<a class="nav-link" href="/page2">Maker's</a>
+			</li>
+			
+			<li class="nav-item{% if active_page == "page3" %} class="active" {% endif %}">
+				<a class="nav-link" href="/page3">Botball</a>
+			</li>
 			
 			<li class="nav-item dropdown">
-				
 				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        	Dropdown link
-      	</a>
+					Dropdown link
+				</a>
 				
-      	<div class="dropdown-menu">
+				<div class="dropdown-menu">
+					<li class="nav-item{% if active_page == "edison" %} class="active" {% endif %}">
+						<a class="nav-link" href="/edison">Edison</a>
+					</li>
 					
-		  		<li class="nav-item{% if active_page == "edison" %} class="active" {% endif %}">
-          	<a class="nav-link" href="/edison">Edison</a>
-          </li>
+					<li class="nav-item{% if active_page == "finch" %} class="active" {% endif %}">
+						<a class="nav-link" href="/finch">Finch</a>
+					</li>
 					
-      	  <li class="nav-item{% if active_page == "finch" %} class="active" {% endif %}">
-            <a class="nav-link" href="/finch">Finch</a>
-          </li>
-					
-      	  <li class="nav-item{% if active_page == "pi" %} class="active" {% endif %}">
-            <a class="nav-link" href="/pi">Pi</a>
-          </li>
-      	</div>
-    	</li> 
+					<li class="nav-item{% if active_page == "pi" %} class="active" {% endif %}">
+						<a class="nav-link" href="/pi">Pi</a>
+					</li>
+				</div>
+			</li> 
 			
-      <li class="nav-item{% if active_page == "news" %} class="active" {% endif %}">
-        <a class="nav-link" href="/news">News</a>
-      </li>
-    </ul>
+			<li class="nav-item{% if active_page == "news" %} class="active" {% endif %}">
+				<a class="nav-link" href="/news">News</a>
+			</li>
+			
+		</ul>
 		
-    <ul class="navbar-nav">
-    	{% if logged_in %}
-	    	<li><span class="navbar-text">Github Username: {{ session['user_data']['login']}}</span></li>
-	    	<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+		<ul class="navbar-nav">
+			{% if logged_in %}
+				<li><span class="navbar-text">Github Username: {{ session['user_data']['login']}}</span></li>
+				<li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
 			{% else %}
-	    	<li class="nav-item"><a class="nav-link" href="/login">Admin Login</a></li>
+				<li class="nav-item"><a class="nav-link" href="/login">Admin Login</a></li>
 			{% endif %}
-     </ul>
-  </div>
+		</ul>
+	</div>
 </nav>
