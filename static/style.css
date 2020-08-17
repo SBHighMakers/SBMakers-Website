@@ -52,11 +52,9 @@
 /*image and text css for three "projects"*/
 .project-image{
     float:right;
-    width: 40%;
 }
 
 .project-text{
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
     font-size: 20px
-    width: 40%;
 }
