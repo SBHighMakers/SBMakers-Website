@@ -51,8 +51,7 @@
 
 /*image and text css for three "projects"*/
 .project-image{
-    float:right;
-    width:10%;
+    float:left;
 }
 
 .project-text{
