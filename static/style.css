@@ -48,3 +48,15 @@
   width: 50%;
   margin: 0 auto;
 }
+
+/*image and text css for three "projects"*/
+.project-image{
+    float:right;
+    width:40%;
+    margin-left: 50px; 
+}
+
+.project-text{
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    font-size: 20px
+}
